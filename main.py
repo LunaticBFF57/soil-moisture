@@ -1,10 +1,15 @@
-pause2 = 0
 reading = 0
+# _______________________________________________________________________________________
+# You change all these variables that are in between the lines.
+# Set this variable to set the 'sleep' time of the Micro:Bit to save power.
+pause2 = 1000
+# Make sure this a whole number between 0 and 255.
+LED_Light_Level = 100
+led.set_brightness(LED_Light_Level)
+# _______________________________________________________________________________________
 
 def on_forever():
-    global pause2, reading
-    # Set this to set the "sleep" time to whatever time you desire.
-    pause2 = 1000
+    global reading
     pins.analog_write_pin(AnalogPin.P1, 1023)
     reading = pins.analog_read_pin(AnalogPin.P0)
     pins.analog_write_pin(AnalogPin.P1, 0)
