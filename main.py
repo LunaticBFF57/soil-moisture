@@ -1,11 +1,13 @@
+# Config and other stuff that should not be changed. 
 reading = 0
 radio.set_transmit_serial_number(True)
 radio.set_group(4)
+
 # ______________________________________________________________
 # You can change all these variables that are in between the lines.
 # Set the 'pause2' variable to set the 'sleep' time of the Micro:Bit to save power.
-# If no pause is desired, simply uncomment the comment, according to your respectable coding language.
 pause2 = 500
+# If no pause is desired, simply uncomment the comment, according to your respectable coding language.
 # pause2 = 0 # (for Python)
 # let pause2 = 0 // (for JavaScript)
 # Make sure this a whole number between 0 and 255.
@@ -20,7 +22,7 @@ pause2 = 500
 # pause2 = 0 # (for Python)
 # let pause2 = 0 // (for JavaScript)
 '''
-
+# Just the script.
 def on_forever():
     global reading
     pins.analog_write_pin(AnalogPin.P1, 1023)
