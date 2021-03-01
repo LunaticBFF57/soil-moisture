@@ -1,4 +1,4 @@
-# Config and other stuff that should not be changed. 
+# Config and other stuff that should not be changed.
 reading = 0
 radio.set_transmit_serial_number(True)
 radio.set_group(4)
@@ -15,13 +15,15 @@ LED_Light_Level = 255
 led.set_brightness(LED_Light_Level)
 # _______________________________________________________________
 
-'''
+
+"""
 Coding across multiple goddamn coding languages in a pain the ass honestly.
 Damn Example Below:
 pause2 = 500
 # pause2 = 0 # (for Python)
 # let pause2 = 0 // (for JavaScript)
-'''
+"""
+
 # Just the script.
 def on_forever():
     global reading
@@ -34,3 +36,4 @@ def on_forever():
         basic.show_number(reading)
     basic.pause(pause2)
 basic.forever(on_forever)
+

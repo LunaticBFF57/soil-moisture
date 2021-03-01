@@ -1,4 +1,4 @@
-//  Config and other stuff that should not be changed. 
+//  Config and other stuff that should not be changed.
 let reading = 0
 radio.setTransmitSerialNumber(true)
 radio.setGroup(4)
