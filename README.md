@@ -1,4 +1,4 @@
-## Info from the creator. (This info is important as the code is slightly buggy and not as I desired)
+## Info from the creator. (This info is important as the code is slightly buggy and not as desired)
 
 Try to use this in one coding language if you want to edit the code.
 **(Try not to use Blocks as it *MAY* mess with the format)**
