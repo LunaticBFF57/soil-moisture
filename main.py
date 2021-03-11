@@ -40,12 +40,9 @@ def on_forever():
     if input.button_is_pressed(Button.A):
         basic.show_number(reading)
     '''
-    Sends the number to the PC (must be connected to the PC via USB).
-    This code is fully optional, just comment it out if not desired.
-    With '#' for Python, or '//' for Javascript.
+    Sends the number to the PC (must be connected to the PC via USB). This code is fully optional, just comment it out if not desired. With '#' for Python, or '//' for Javascript.
     '''
     serial.write_value("Water Wetness", reading)
-    
     basic.pause(pause2)
 basic.forever(on_forever)
 

@@ -40,12 +40,7 @@ basic.forever(function on_forever() {
         basic.showNumber(reading)
     }
     
-    /** 
-    Sends the number to the PC (must be connected to the PC via USB).
-    This code is fully optional, just comment it out if not desired.
-    With '#' for Python, or '//' for Javascript.
-    
- */
+    /** Sends the number to the PC (must be connected to the PC via USB). This code is fully optional, just comment it out if not desired. With '#' for Python, or '//' for Javascript. */
     serial.writeValue("Water Wetness", reading)
     basic.pause(pause2)
 })
