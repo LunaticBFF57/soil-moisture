@@ -1,6 +1,6 @@
 # Config and other stuff that should not be changed.
 reading = 0
-radio.set_group(4)
+radio.set_group(69)
 
 # ______________________________________________________________
 # You can change all these variables that are in between the lines.
@@ -39,8 +39,11 @@ def on_forever():
         pins.analog_write_pin(AnalogPin.P2, 0)
     if input.button_is_pressed(Button.A):
         basic.show_number(reading)
-    
-    # Sends the number to the PC (must be connected to the PC via USB).
+    '''
+    Sends the number to the PC (must be connected to the PC via USB).
+    This code is fully optional, just comment it out if not desired.
+    With '#' for Python, or '//' for Javascript.
+    '''
     serial.write_value("Water Wetness", reading)
     
     basic.pause(pause2)

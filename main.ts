@@ -1,6 +1,6 @@
 //  Config and other stuff that should not be changed.
 let reading = 0
-radio.setGroup(4)
+radio.setGroup(69)
 //  ______________________________________________________________
 //  You can change all these variables that are in between the lines.
 //  Set the 'pause2' variable to set the 'sleep' time of the Micro:Bit to save power.
@@ -40,7 +40,12 @@ basic.forever(function on_forever() {
         basic.showNumber(reading)
     }
     
-    //  Sends the number to the PC (must be connected to the PC via USB).
+    /** 
+    Sends the number to the PC (must be connected to the PC via USB).
+    This code is fully optional, just comment it out if not desired.
+    With '#' for Python, or '//' for Javascript.
+    
+ */
     serial.writeValue("Water Wetness", reading)
     basic.pause(pause2)
 })
