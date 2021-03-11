@@ -27,7 +27,7 @@ basic.forever(function on_forever() {
     reading = pins.analogReadPin(AnalogPin.P0)
     pins.analogWritePin(AnalogPin.P1, 0)
     led.plotBarGraph(reading, 1023)
-    if (reading < 750) {
+    if (reading < 500) {
         basic.showIcon(IconNames.Umbrella)
         pins.servoWritePin(AnalogPin.P2, 0)
         basic.pause(3000)
@@ -40,10 +40,7 @@ basic.forever(function on_forever() {
         basic.showNumber(reading)
     }
     
-    /** 
-    # Sends the number to the PC (must be connected to the PC via USB).
-    serial.write_value("Water Wetness", reading)
-    
- */
+    //  Sends the number to the PC (must be connected to the PC via USB).
+    serial.writeValue("Water Wetness", reading)
     basic.pause(pause2)
 })

@@ -30,7 +30,7 @@ def on_forever():
     reading = pins.analog_read_pin(AnalogPin.P0)
     pins.analog_write_pin(AnalogPin.P1, 0)
     led.plot_bar_graph(reading, 1023)
-    if reading < 750:
+    if reading < 500:
         basic.show_icon(IconNames.UMBRELLA)
         pins.servo_write_pin(AnalogPin.P2, 0)
         basic.pause(3000)
@@ -39,10 +39,10 @@ def on_forever():
         pins.analog_write_pin(AnalogPin.P2, 0)
     if input.button_is_pressed(Button.A):
         basic.show_number(reading)
-    '''
+    
     # Sends the number to the PC (must be connected to the PC via USB).
     serial.write_value("Water Wetness", reading)
-    '''
+    
     basic.pause(pause2)
 basic.forever(on_forever)
 
