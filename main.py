@@ -32,7 +32,7 @@ def on_forever():
     reading = pins.analog_read_pin(AnalogPin.P0)
     pins.analog_write_pin(AnalogPin.P1, 0)
     led.plot_bar_graph(reading, 1023)
-    radio.send_number(reading)
+    radio.send_number(reading / 10)
     if reading < 500:
         basic.show_icon(IconNames.UMBRELLA)
         pins.servo_write_pin(AnalogPin.P2, 0)
