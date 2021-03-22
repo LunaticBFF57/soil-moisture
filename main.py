@@ -2,14 +2,14 @@
 reading = 0
 radio.set_group(69)
 
-# █████████████████████████████████████████████████████████████████
+# ███████████████████████████████████████████████████████████████████████████████
 # You can change all these variables that are in between the lines.
-# Set the 'pause2' variable to set the 'sleep' time of the Micro:Bit to save power.
+# Set the 'pause2' variable to set the 'delay' time of the Micro:Bit to save power.
 pause2 = 100
 # Make sure this a whole number between 0 and 255.
 LED_Light_Level = 255
 led.set_brightness(LED_Light_Level)
-# █████████████████████████████████████████████████████████████████
+# ███████████████████████████████████████████████████████████████████████████████
 
 
 # Just the script.
